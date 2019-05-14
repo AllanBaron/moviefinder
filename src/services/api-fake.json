@@ -1,0 +1,30 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Allan"
+    },
+    {
+      "id": 2,
+      "name": "José"
+    },
+    {
+      "id": 3,
+      "name": "Israel"
+    }
+  ],
+  "movies": [
+    {
+      "id": 1,
+      "title": "Vingadores: Ultimato"
+    },
+    {
+      "id": 2,
+      "title": "Capitã Marvel"
+    },
+    {
+      "id": 3,
+      "title": "A cinco passos de você"
+    }
+  ]
+}
