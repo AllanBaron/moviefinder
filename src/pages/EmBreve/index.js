@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
+import { Breadcrumbs } from '../../components';
 
 import Base from '../Base';
 
@@ -10,9 +11,10 @@ const EmBreve = (props) => {
     <Base
       currentUrlPage={match.url}
       page={() => (
-        <div className="uk-container">
-          <h1>Página - Filmes em Breve</h1>
-        </div>
+        <Fragment>
+          <Breadcrumbs dir="Home / Filmes" title="Em Breve" />
+          <div className="uk-container" />
+        </Fragment>
       )}
     />
   );
