@@ -19,7 +19,9 @@ export default class Header extends Component {
     const { currentUrlPage } = this.props;
     const currentPage = menu.find(item => item.url === currentUrlPage);
 
-    this.setState({ metaTitle: currentPage.title });
+    this.setState({
+      metaTitle: currentPage.optionalTitle ? currentPage.optionalTitle : currentPage.title,
+    });
   }
 
   render() {

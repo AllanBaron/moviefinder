@@ -10,11 +10,13 @@ export const menu = [
   {
     id: 1,
     title: 'Em Cartaz',
+    optionalTitle: 'Filmes em cartaz',
     url: '/filmes/em-cartaz',
   },
   {
     id: 2,
     title: 'Em Breve',
+    optionalTitle: 'Filmes em breve',
     url: '/filmes/em-breve',
   },
 ];
