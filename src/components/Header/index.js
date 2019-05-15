@@ -15,7 +15,7 @@ import {
   SubMenu, SectionLeft, SectionRight, Menu,
 } from './styles';
 
-import menu from '../../services/menu';
+import { title, menu } from '../../services/app-info';
 
 export default class Header extends Component {
   state = {
@@ -36,7 +36,7 @@ export default class Header extends Component {
     return (
       <Fragment>
         <Helmet>
-          <title>{`${metaTitle} | Movie Finder`}</title>
+          <title>{`${metaTitle} | ${title}`}</title>
         </Helmet>
 
         <header>
@@ -65,6 +65,7 @@ export default class Header extends Component {
               </SectionRight>
             </div>
           </SubMenu>
+
           <Menu>
             <ul>
               {menu.map(item => (

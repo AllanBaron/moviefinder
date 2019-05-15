@@ -1,35 +1,28 @@
-import React, { Component, Fragment } from 'react';
+import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
+import { Header, Footer } from '../../components';
 
-export default class EmCartaz extends Component {
-  state = {};
+const EmCartaz = (props) => {
+  const { match } = props;
 
-  render() {
-    const { url } = this.props.match;
+  return (
+    <Fragment>
+      <Header activePage={match.url} />
 
-    return (
-      <Fragment>
-        <Header activePage={url} />
+      <div>
+        <h1>Página - Filmes em Cartaz</h1>
+      </div>
 
-        <div>
-          <h1>Página - Filmes em Cartaz</h1>
-        </div>
-
-        <Footer />
-      </Fragment>
-    );
-  }
-}
+      <Footer />
+    </Fragment>
+  );
+};
 
 EmCartaz.propTypes = {
   match: PropTypes.shape({
     url: PropTypes.string.isRequired,
-  }),
+  }).isRequired,
 };
 
-EmCartaz.getDefaultProps = {
-  match: '',
-};
+export default EmCartaz;

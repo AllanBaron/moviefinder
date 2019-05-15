@@ -2,6 +2,8 @@ import React, { Component, Fragment } from 'react';
 import { Helmet } from 'react-helmet';
 
 import Routes from './routes';
+import { title, description } from './services/app-info';
+
 import { GlobalStyle, Offline } from './styles';
 
 export default class App extends Component {
@@ -25,14 +27,12 @@ export default class App extends Component {
 
   render() {
     const { online } = this.state;
+
     return (
       <Fragment>
         <Helmet>
-          <title>Movie Finder</title>
-          <meta
-            name="description"
-            content="Encontre o cinema mais perto de você pelo menor proço."
-          />
+          <title>{title}</title>
+          <meta name="description" content={description} />
         </Helmet>
 
         <Routes />

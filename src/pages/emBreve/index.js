@@ -1,35 +1,28 @@
-import React, { Component, Fragment } from 'react';
+import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
+import { Header, Footer } from '../../components';
 
-export default class EmBreve extends Component {
-  state = {};
+const EmBreve = (props) => {
+  const { match } = props;
 
-  render() {
-    const { url } = this.props.match;
+  return (
+    <Fragment>
+      <Header activePage={match.url} />
 
-    return (
-      <Fragment>
-        <Header activePage={url} />
+      <div>
+        <h1>Página - Filmes em Breve</h1>
+      </div>
 
-        <div>
-          <h1>Página - Filmes em Breve</h1>
-        </div>
-
-        <Footer />
-      </Fragment>
-    );
-  }
-}
+      <Footer />
+    </Fragment>
+  );
+};
 
 EmBreve.propTypes = {
   match: PropTypes.shape({
     url: PropTypes.string.isRequired,
-  }),
+  }).isRequired,
 };
 
-EmBreve.getDefaultProps = {
-  match: '',
-};
+export default EmBreve;

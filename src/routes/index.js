@@ -1,9 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
-import Main from '../pages/main';
-import EmCartaz from '../pages/emCartaz';
-import EmBreve from '../pages/emBreve';
+import { Main, EmCartaz, EmBreve } from '../pages';
 
 const Router = () => (
   <BrowserRouter>
