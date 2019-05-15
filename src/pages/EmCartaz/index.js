@@ -1,21 +1,20 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
-import { Header, Footer } from '../../components';
+import Base from '../Base';
 
 const EmCartaz = (props) => {
   const { match } = props;
 
   return (
-    <Fragment>
-      <Header activePage={match.url} />
-
-      <div>
-        <h1>Página - Filmes em Cartaz</h1>
-      </div>
-
-      <Footer />
-    </Fragment>
+    <Base
+      currentUrlPage={match.url}
+      page={() => (
+        <div className="uk-container">
+          <h1>Página - Filmes em Cartaz</h1>
+        </div>
+      )}
+    />
   );
 };
 

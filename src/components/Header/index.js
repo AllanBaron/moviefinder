@@ -13,19 +13,17 @@ import {
 } from './styles';
 
 export default class Header extends Component {
-  state = {
-    metaTitle: '',
-  };
+  state = { metaTitle: '' };
 
   componentDidMount() {
-    const { activePage } = this.props;
-    const test = menu.find(item => item.url === activePage);
+    const { currentUrlPage } = this.props;
+    const currentPage = menu.find(item => item.url === currentUrlPage);
 
-    this.setState({ metaTitle: test.title });
+    this.setState({ metaTitle: currentPage.title });
   }
 
   render() {
-    const { activePage } = this.props;
+    const { currentUrlPage } = this.props;
     const { metaTitle } = this.state;
 
     return (
@@ -51,7 +49,7 @@ export default class Header extends Component {
             <ul>
               {menu.map(item => (
                 <li key={item.id}>
-                  <Link to={item.url} className={activePage === item.url ? 'active' : ''}>
+                  <Link to={item.url} className={currentUrlPage === item.url ? 'active' : ''}>
                     {item.title}
                   </Link>
                 </li>
@@ -65,5 +63,5 @@ export default class Header extends Component {
 }
 
 Header.propTypes = {
-  activePage: PropTypes.string.isRequired,
+  currentUrlPage: PropTypes.string.isRequired,
 };
