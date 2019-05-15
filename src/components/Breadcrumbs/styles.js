@@ -1,15 +1,15 @@
 import styled from 'styled-components';
-import { ColorLightGrey } from '../../styles';
+import { ColorPrimary, ColorLightGrey } from '../../styles';
 
 export const BreadcrumbsContainer = styled.section`
   background: ${ColorLightGrey};
   padding: 30px;
+  font-weight: bold;
 
   h1 {
+    font-size: 30px;
     margin-top: 5px;
-  }
-
-  div {
-    color: #ffffff;
+    font-weight: bold;
+    color: ${ColorPrimary};
   }
 `;
