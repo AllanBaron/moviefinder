@@ -3,7 +3,9 @@ import {
   BrowserRouter, Switch, Route, Redirect,
 } from 'react-router-dom';
 
-import { Main, EmCartaz, EmBreve } from '../pages';
+import {
+  Main, EmCartaz, EmBreve, NoMatchPage,
+} from '../pages';
 
 const Router = () => (
   <BrowserRouter>
@@ -11,6 +13,7 @@ const Router = () => (
       <Route path="/" exact component={Main} />
       <Route path="/filmes/em-cartaz" component={EmCartaz} />
       <Route path="/filmes/em-breve" component={EmBreve} />
+      <Route component={NoMatchPage} />
 
       <Redirect from="/filmes" exact to="/filmes/em-cartaz" />
     </Switch>

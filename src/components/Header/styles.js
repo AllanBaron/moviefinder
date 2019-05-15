@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { ColorPrimary, ColorLightGrey, ColorDarkGrey } from '../../styles';
+import { ColorLightGrey } from '../../styles';
 
 export const SectionLeft = styled.div`
   width: 50%;
