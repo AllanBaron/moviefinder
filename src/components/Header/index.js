@@ -2,20 +2,15 @@ import React, { Component, Fragment } from 'react';
 import { Helmet } from 'react-helmet';
 import PropTypes from 'prop-types';
 
-import {
-  FaFacebookSquare,
-  FaInstagram,
-  FaTwitter,
-  FaYoutube,
-  FaMapMarkerAlt,
-} from 'react-icons/fa';
-
 import { Link } from 'react-router-dom';
+import { title, menu } from '../../services/app-info';
+
+import SocialIcons from '../SocialIcons';
+import UserLocation from './UserLocation';
+
 import {
   SubMenu, SectionLeft, SectionRight, Menu,
 } from './styles';
-
-import { title, menu } from '../../services/app-info';
 
 export default class Header extends Component {
   state = {
@@ -43,25 +38,11 @@ export default class Header extends Component {
           <SubMenu>
             <div className="uk-container uk-flex">
               <SectionLeft>
-                <a href="#facebook">
-                  <FaFacebookSquare className="icon-facebook" />
-                </a>
-                <a href="#instagram">
-                  <FaInstagram className="icon-instagram" />
-                </a>
-                <a href="#twitter">
-                  <FaTwitter className="icon-twitter" />
-                </a>
-                <a href="#youtube">
-                  <FaYoutube className="icon-youtube" />
-                </a>
+                <SocialIcons />
               </SectionLeft>
 
               <SectionRight>
-                <a href="#localization">
-                  <FaMapMarkerAlt />
-                  <span>Encontre o cinema mais perto</span>
-                </a>
+                <UserLocation />
               </SectionRight>
             </div>
           </SubMenu>
