@@ -2,13 +2,14 @@ import styled, { createGlobalStyle } from 'styled-components';
 
 export const FontPrimary = 'Open Sans';
 export const ColorPrimary = '#890000';
+export const ColorLightGrey = '#ececec';
+export const ColorDarkGrey = '#5a5a5a';
 
 export const GlobalStyle = createGlobalStyle`
   /* Uikit */
   @import url('https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.4/css/uikit.min.css');
 
   /* Fonts */
-  @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css');
   @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
   * {

@@ -7,8 +7,8 @@ const Router = () => (
   <BrowserRouter>
     <Switch>
       <Route path="/" exact component={Main} />
-      <Route path="/em-cartaz" exact component={EmCartaz} />
-      <Route path="/em-breve" exact component={EmBreve} />
+      <Route path="/em-cartaz" component={EmCartaz} />
+      <Route path="/em-breve" component={EmBreve} />
     </Switch>
   </BrowserRouter>
 );

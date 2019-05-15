@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { ColorPrimary } from '../../styles';
+import { ColorPrimary, ColorLightGrey, ColorDarkGrey } from '../../styles';
 
 export const SectionLeft = styled.div`
   width: 50%;
@@ -7,7 +7,7 @@ export const SectionLeft = styled.div`
   justify-content: flex-start;
 
   a {
-    color: #5a5a5a;
+    color: ${ColorDarkGrey};
     margin-right: 15px;
     padding-bottom: 2px;
 
@@ -38,7 +38,7 @@ export const SectionRight = styled.div`
   justify-content: flex-end;
 
   a {
-    color: #5a5a5a;
+    color: ${ColorDarkGrey};
     text-decoration: none;
 
     &:hover {
@@ -56,7 +56,7 @@ export const SectionRight = styled.div`
 `;
 
 export const SubMenu = styled.div`
-  background: #ececec;
+  background: ${ColorLightGrey};
   padding: 8px 0;
 `;
 
