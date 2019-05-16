@@ -65,7 +65,7 @@
 
 ----
 
-**Iniciando o Projeto **
+**Iniciando o Projeto**
 
 No diretório do projeto, você pode executar:
 
