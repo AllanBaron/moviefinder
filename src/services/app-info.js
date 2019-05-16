@@ -1,5 +1,5 @@
 export const title = 'Movie Finder';
-export const description = 'Encontre o cinema mais perto de você pelo menor proço.';
+export const description = 'Encontre o cinema mais perto de você pelo menor preço.';
 
 export const menu = [
   {
