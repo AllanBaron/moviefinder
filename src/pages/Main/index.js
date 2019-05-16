@@ -1,7 +1,38 @@
-import React from 'react';
-import Base from '../Base';
+import React, { Component } from 'react';
 
-const Main = () => (
+import Base from '../Base';
+import { MoviePosterGrid } from '../../components';
+
+import api from '../../services/api';
+
+class Main extends Component {
+  state = {
+    movies: [],
+  };
+
+  async componentDidMount() {
+    const response = await api.get('movies');
+
+    this.setState({ movies: response.data.slice(1, 6) });
+  }
+
+  render() {
+    const { movies } = this.state;
+
+    return (
+      <Base
+        page={() => (
+          <div className="uk-container">
+            <h1>Página - Home</h1>
+            <MoviePosterGrid movies={movies} />
+          </div>
+        )}
+      />
+    );
+  }
+}
+
+/* const Main = () => (
   <Base
     page={() => (
       <div className="uk-container">
@@ -9,6 +40,6 @@ const Main = () => (
       </div>
     )}
   />
-);
+); */
 
 export default Main;
