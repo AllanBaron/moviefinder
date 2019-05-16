@@ -1,7 +1,7 @@
+![](https://moviefinder-univali.firebaseapp.com/images/icons/icon-72x72.png =50x)<br>
 **PROJETO MOVIE FINDER**
-![](https://moviefinder-univali.firebaseapp.com/images/icons/icon-72x72.png)
 
->Acadêmicos: Allan Baron, Israel Efraim e José Carlos.
+>***Acadêmicos:*** Allan Baron, Israel Efraim e José Carlos.
 
 **Visão geral**
 
