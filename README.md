@@ -1,24 +1,62 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**PROJETO MOVIE FINDER**
 
-## Available Scripts
+Acadêmicos: Allan Baron, Israel Efraim e José Carlos.
 
-In the project directory, you can run:
+**Visão geral**
 
-### `npm start`
+Sistema web para busca de filmes e localização de cinemas que apresentam dados filmes. O sistema será capaz de apresentar um catálogo de filmes disponíveis em diversos complexos de redes de cinemas. Ademais, será possível que os usuários realizem avaliações e críticas dos filmes.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+**Detalhamento/funcionalidades**
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+- Catálogo de filmes
+  - Em cartaz
+  - Em breve
+- Detalhamento sobre filmes
+  - Mídia (fotos, trailer)
+  - Categoria (gênero)
+  - Faixa indicativa de idade
+  - Duração
+  - Data de lançamento
+  - Sinopse
+  - Diretor
+  - Atores
+  - Cinemas e horários disponíveis
+  - Situação (cartaz | breve)
+  - Áudio (dublado | legendado | original)
+- Interação para usuário
+  - Cadastro
+    - Nome
+    - E-mail
+    - Senha
+    - Avatar
+  - Avaliação em filmes
+    - Contador de qualidade na forma de estrelas (5 estrelas)
+  - Comentário em filmes
+- Plataforma para cinemas
+  - Cadastro
+    - CNPJ
+    - Nome do complexo
+    - Localização
+    - Responsáveis
+    - Telefone
+    - E-mail
+    - Preço das modalidades dos ingressos
+    - Usuário / Senha
+  - Cadastro de disponibilidade de filmes e horários
 
+**Atores**
 
-### `npm run build`
+- Gestor do sistema
+  - Alimenta o sistema com os lançamentos e respectivos dados referentes a este. Aprova o cadastro dos complexos de rede de cinema.
+- Agente do Cinema
+  - Solicita o cadastro do seu complexo de rede de cinema e insere a disponibilidade e horários de filmes.
+- Usuário comum
+  - Pesquisa, avalia e comenta sobre os filmes registrados. Este ator é responsável por realizar o cadastro de seu perfil.
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Inspiração/concorrente**
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- AdoroCinema
+- Trivago
+- Buscapé
+- Booking.com
+- CineGracher
