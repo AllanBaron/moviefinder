@@ -14,7 +14,8 @@
     "styled-components": "^4.2.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "fake-server": "json-server --watch --port 3001 src/services/api-fake.json",
+    "start": "yarn fake-server & react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
