@@ -1,6 +1,6 @@
 **PROJETO MOVIE FINDER**
 
-Acadêmicos: Allan Baron, Israel Efraim e José Carlos.
+>Acadêmicos: Allan Baron, Israel Efraim e José Carlos.
 
 **Visão geral**
 
@@ -60,3 +60,17 @@ Sistema web para busca de filmes e localização de cinemas que apresentam dados
 - Buscapé
 - Booking.com
 - CineGracher
+
+
+##  Scripts Disponíveis
+
+No diretório do projeto, você pode executar:
+
+### `npm start`
+
+Executa o aplicativo no modo de desenvolvimento. <br>
+Abra [ http: // localhost: 3000 ] (http: // localhost: 3000) para visualizá-lo no navegador.
+
+### `npm run build`
+
+Cria o aplicativo para produção na pasta `build` .
