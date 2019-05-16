@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { ColorLightGrey } from '../../styles';
+import { ColorLightGrey } from '../../../styles';
 
 export const SectionLeft = styled.div`
   width: 50%;
@@ -13,13 +13,7 @@ export const SectionRight = styled.div`
   justify-content: flex-end;
 `;
 
-export const SubMenu = styled.div`
+export const SubMenuContainer = styled.div`
   background: ${ColorLightGrey};
   padding: 8px 0;
-`;
-
-export const Menu = styled.section`
-  a.active {
-    color: red;
-  }
 `;

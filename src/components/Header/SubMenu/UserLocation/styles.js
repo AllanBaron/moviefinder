@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { ColorDarkGrey, ColorPrimary } from '../../../styles';
+import { ColorDarkGrey, ColorPrimary } from '../../../../styles';
 
 export const Location = styled.a`
   color: ${ColorDarkGrey} !important;
