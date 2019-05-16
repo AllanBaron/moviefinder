@@ -1,10 +1,11 @@
+![](https://moviefinder-univali.firebaseapp.com/images/icons/icon-128x128.png)
 **PROJETO MOVIE FINDER**
 
 >Acadêmicos: Allan Baron, Israel Efraim e José Carlos.
 
 **Visão geral**
 
-Sistema web para busca de filmes e localização de cinemas que apresentam dados filmes. O sistema será capaz de apresentar um catálogo de filmes disponíveis em diversos complexos de redes de cinemas. Ademais, será possível que os usuários realizem avaliações e críticas dos filmes.
+>Sistema web para busca de filmes e localização de cinemas que apresentam dados filmes. O sistema será capaz de apresentar um catálogo de filmes disponíveis em diversos complexos de redes de cinemas. Ademais, será possível que os usuários realizem avaliações e críticas dos filmes.
 
 **Detalhamento/funcionalidades**
 
