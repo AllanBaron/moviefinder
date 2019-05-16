@@ -65,7 +65,7 @@
 
 ----
 
-**Scripts Disponíveis**
+**Iniciando o Projeto **
 
 No diretório do projeto, você pode executar:
 
