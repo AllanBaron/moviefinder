@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 
 import Base from '../Base';
-import { MoviePosterGrid } from '../../components';
+import { SectionPreview } from '../../components';
 
 import api from '../../services/api';
+import { menu } from '../../services/app-info';
 
 class Main extends Component {
   state = {
@@ -13,7 +14,7 @@ class Main extends Component {
   async componentDidMount() {
     const response = await api.get('movies');
 
-    this.setState({ movies: response.data.slice(1, 6) });
+    this.setState({ movies: response.data });
   }
 
   render() {
@@ -24,7 +25,18 @@ class Main extends Component {
         page={() => (
           <div className="uk-container">
             <h1>Página - Home</h1>
-            <MoviePosterGrid movies={movies} />
+            {menu
+              .filter(item => 'movieStatus' in item.props)
+              .map(section => (
+                <SectionPreview
+                  key={section.title}
+                  title={section.optionalTitle}
+                  url={section.url}
+                  movies={movies
+                    .filter(movie => movie.status === section.props.movieStatus)
+                    .slice(0, 5)}
+                />
+              ))}
           </div>
         )}
       />
