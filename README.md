@@ -1,4 +1,4 @@
-![](https://moviefinder-univali.firebaseapp.com/images/icons/icon-72x72.png =50x)<br>
+<img src="https://moviefinder-univali.firebaseapp.com/images/icons/icon-72x72.png" alt="Movie Finder Logo" width="50"/>
 **PROJETO MOVIE FINDER**
 
 >***Acadêmicos:*** Allan Baron, Israel Efraim e José Carlos.
