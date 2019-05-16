@@ -4,7 +4,7 @@ import Base from '../Base';
 import { SectionPreview } from '../../components';
 
 import api from '../../services/api';
-import { menu } from '../../services/app-info';
+import { pages } from '../../services/app-info';
 
 class Main extends Component {
   state = {
@@ -25,16 +25,14 @@ class Main extends Component {
         page={() => (
           <div className="uk-container">
             <h1>Página - Home</h1>
-            {menu
-              .filter(item => 'movieStatus' in item.props)
+            {pages
+              .filter(item => 'movieStatus' in item)
               .map(section => (
                 <SectionPreview
                   key={section.title}
                   title={section.optionalTitle}
                   url={section.url}
-                  movies={movies
-                    .filter(movie => movie.status === section.props.movieStatus)
-                    .slice(0, 5)}
+                  movies={movies.filter(movie => movie.status === section.movieStatus).slice(0, 5)}
                 />
               ))}
           </div>

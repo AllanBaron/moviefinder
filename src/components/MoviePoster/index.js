@@ -5,7 +5,7 @@ import { MoviePosterContainer } from './styles';
 
 const MoviePoster = ({ posterUrl, posterTitle }) => (
   <MoviePosterContainer>
-    <div className="uk-inline-clip uk-transition-toggle" uk-tooltip={posterTitle}>
+    <div className="uk-inline-clip uk-transition-toggle" uk-tooltip={`title: ${posterTitle}`}>
       <img
         className="uk-transition-scale-up uk-transition-opaque"
         src={posterUrl}
