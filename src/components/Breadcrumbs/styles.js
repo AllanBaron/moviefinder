@@ -1,10 +1,17 @@
 import styled from 'styled-components';
-import { ColorPrimary, ColorLightGrey } from '../../styles';
+import { ColorPrimary, ColorLightGrey, ColorDarkGrey } from '../../styles';
 
 export const BreadcrumbsContainer = styled.section`
   background: ${ColorLightGrey};
   padding: 30px;
-  font-weight: bold;
+
+  a,
+  span {
+    font-size: 16px;
+    font-weight: bolder;
+    color: ${ColorDarkGrey};
+    text-decoration: none;
+  }
 
   h1 {
     font-size: 30px;

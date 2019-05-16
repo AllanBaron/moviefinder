@@ -6,13 +6,14 @@ import Base from '../Base';
 
 const EmCartaz = (props) => {
   const { match } = props;
+  const dir = [{ id: 0, title: 'Home', url: '/' }, { id: 1, title: 'Filmes' }];
 
   return (
     <Base
       currentUrlPage={match.url}
       page={() => (
         <Fragment>
-          <Breadcrumbs dir="Home / Filmes" title="Em Cartaz" />
+          <Breadcrumbs dir={dir} title="Em Cartaz" />
           <div className="uk-container" />
         </Fragment>
       )}

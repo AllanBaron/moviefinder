@@ -11,11 +11,10 @@ const Router = () => (
   <BrowserRouter>
     <Switch>
       <Route path="/" exact component={Main} />
+      <Redirect from="/filmes" exact to="/filmes/em-cartaz" />
       <Route path="/filmes/em-cartaz" component={EmCartaz} />
       <Route path="/filmes/em-breve" component={EmBreve} />
       <Route component={NoMatchPage} />
-
-      <Redirect from="/filmes" exact to="/filmes/em-cartaz" />
     </Switch>
   </BrowserRouter>
 );
