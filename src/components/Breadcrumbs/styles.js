@@ -14,9 +14,8 @@ export const BreadcrumbsContainer = styled.section`
   }
 
   h1 {
-    font-size: 30px;
+    font-size: 36px;
     margin-top: 5px;
-    font-weight: bold;
     color: ${ColorPrimary};
   }
 `;
