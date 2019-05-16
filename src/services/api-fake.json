@@ -16,15 +16,57 @@
   "movies": [
     {
       "id": 1,
-      "title": "Vingadores: Ultimato"
+      "title": "Vingadores: Ultimato",
+      "poster": "./assets/images/capita-marvel.png",
+      "status": "released"
     },
     {
       "id": 2,
-      "title": "Capitã Marvel"
+      "title": "Capitã Marvel",
+      "poster": "./assets/images/capita-marvel.png",
+      "status": "released"
     },
     {
       "id": 3,
-      "title": "A cinco passos de você"
+      "title": "A cinco passos de você",
+      "poster": "./assets/images/capita-marvel.png",
+      "status": "comming-soon"
+    },
+    {
+      "id": 4,
+      "title": "Allandin",
+      "poster": "./assets/images/capita-marvel.png",
+      "status": "comming-soon"
+    },
+    {
+      "id": 5,
+      "title": "Cemitério Maldito",
+      "poster": "./assets/images/capita-marvel.png",
+      "status": "released"
+    },
+    {
+      "id": 6,
+      "title": "Zer0",
+      "poster": "./assets/images/capita-marvel.png",
+      "status": "released"
+    },
+    {
+      "id": 7,
+      "title": "Maya",
+      "poster": "./assets/images/capita-marvel.png",
+      "status": "released"
+    },
+    {
+      "id": 8,
+      "title": "Capitã Marvel",
+      "poster": "./assets/images/capita-marvel.png",
+      "status": "released"
+    },
+    {
+      "id": 9,
+      "title": "A cinco passos de você",
+      "poster": "./assets/images/capita-marvel.png",
+      "status": "comming-soon"
     }
   ]
 }
