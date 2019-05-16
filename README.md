@@ -71,9 +71,9 @@ No diretório do projeto, você pode executar:
 
 **`npm start`**
 
-Executa o aplicativo no modo de desenvolvimento. <br>
+>Executa o aplicativo no modo de desenvolvimento. <br>
 Abra [http://localhost:3000](http://localhost:3000) para visualizá-lo no navegador.
 
 **`npm run build`**
 
-Cria o aplicativo para produção na pasta `build` .
+>Cria o aplicativo para produção na pasta `build` .
