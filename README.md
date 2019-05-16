@@ -61,17 +61,17 @@ Sistema web para busca de filmes e localização de cinemas que apresentam dados
 - Booking.com
 - CineGracher
 
-
+----
 
 **Scripts Disponíveis**
 
 No diretório do projeto, você pode executar:
 
-***`npm start`***
+**`npm start`**
 
 Executa o aplicativo no modo de desenvolvimento. <br>
 Abra [ http: // localhost: 3000 ] (http: // localhost: 3000) para visualizá-lo no navegador.
 
-***`npm run build`***
+**`npm run build`**
 
 Cria o aplicativo para produção na pasta `build` .
