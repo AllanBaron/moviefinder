@@ -10,7 +10,9 @@ const Base = (props) => {
     <Fragment>
       <Header />
 
-      <section uk-height-viewport="expand: true">{page()}</section>
+      <section className="uk-animation-fade" uk-height-viewport="expand: true">
+        {page()}
+      </section>
 
       <Footer />
     </Fragment>
