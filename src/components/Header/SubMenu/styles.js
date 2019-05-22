@@ -13,7 +13,7 @@ export const SectionRight = styled.div`
   justify-content: flex-end;
 `;
 
-export const SubMenuContainer = styled.div`
+export const SubMenuContainer = styled.section`
   background: ${ColorLightGrey};
   padding: 8px 0;
 `;
