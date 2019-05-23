@@ -3,17 +3,12 @@ import PropTypes from 'prop-types';
 
 import { MoviePosterGridContainer } from './styles';
 
-import MoviePoster from '../MoviePoster';
+import MoviePosterCollection from '../MoviePosterCollection';
 
 const MoviePosterGrid = ({ movies }) => (
   <MoviePosterGridContainer>
-    <div className="uk-grid">
-      {movies
-        && movies.map(movie => (
-          <div key={movie.id} className={`uk-width-1-${movies.length}`}>
-            <MoviePoster posterUrl={movie.poster} posterTitle={movie.title} />
-          </div>
-        ))}
+    <div className="uk-child-width-1-5@s" uk-grid="">
+      <MoviePosterCollection movies={movies} />
     </div>
   </MoviePosterGridContainer>
 );

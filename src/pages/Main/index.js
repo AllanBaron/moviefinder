@@ -32,7 +32,7 @@ class Main extends Component {
                   key={section.title}
                   title={section.optionalTitle}
                   url={section.url}
-                  movies={movies.filter(movie => movie.status === section.movieStatus).slice(0, 5)}
+                  movies={movies.filter(movie => movie.status === section.movieStatus)}
                 />
               ))}
           </div>
