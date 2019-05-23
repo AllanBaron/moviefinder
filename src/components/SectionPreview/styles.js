@@ -22,7 +22,8 @@ export const SectionPreviewContainer = styled.section`
 
       color: ${ColorPrimary} !important;
       border: 3px solid ${ColorPrimary} !important;
-      &: hover {
+
+      &:hover {
         opacity: 0.9;
       }
     }
