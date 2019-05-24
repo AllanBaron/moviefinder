@@ -18,6 +18,7 @@
   },
   "plugins": ["react", "jsx-a11y", "import"],
   "rules": {
+    "jsx-a11y/anchor-has-content": "off",
     "react/jsx-filename-extension": [
       "error",
       {

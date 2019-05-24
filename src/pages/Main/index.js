@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import Base from '../Base';
-import { SectionPreview } from '../../components';
+import { Slideshow, SectionPreview } from '../../components';
 
 import api from '../../services/api';
 import { pages } from '../../services/app-info';
@@ -24,7 +24,8 @@ class Main extends Component {
       <Base
         page={() => (
           <div className="uk-container">
-            <h1>Página - Home</h1>
+            <Slideshow />
+
             {pages
               .filter(item => 'movieStatus' in item)
               .map(section => (

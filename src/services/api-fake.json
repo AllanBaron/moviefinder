@@ -13,6 +13,14 @@
       "name": "Israel"
     }
   ],
+  "slideshow": [
+    {
+      "id": 1,
+      "title": "Vingadores: Ultimato",
+      "img": "https://i.postimg.cc/YCBYtxcQ/Vingadores-Ultimato.jpg",
+      "url": "/filmes/em-cartaz/vingadores-ultimato"
+    }
+  ],
   "movies": [
     {
       "id": 1,
