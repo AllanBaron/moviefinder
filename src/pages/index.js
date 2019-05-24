@@ -1,8 +1,8 @@
 import Main from './Main';
-import EmCartaz from './EmCartaz';
-import EmBreve from './EmBreve';
+import SectionReleased from './SectionReleased';
+import SectionCommingSoon from './SectionCommingSoon';
 import NoMatchPage from './NoMatchPage';
 
 export {
-  Main, EmCartaz, EmBreve, NoMatchPage,
+  Main, SectionReleased, SectionCommingSoon, NoMatchPage,
 };

@@ -1,16 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { MoviePosterGridContainer } from './styles';
-
 import MoviePosterCollection from '../MoviePosterCollection';
 
 const MoviePosterGrid = ({ movies }) => (
-  <MoviePosterGridContainer>
-    <div className="uk-child-width-1-5@s" uk-grid="">
-      <MoviePosterCollection movies={movies} />
-    </div>
-  </MoviePosterGridContainer>
+  <div className="uk-flex-center uk-child-width-1-5@s" uk-grid="">
+    <MoviePosterCollection movies={movies} />
+  </div>
 );
 
 MoviePosterGrid.propTypes = {
