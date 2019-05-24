@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 
 import Base from '../Base';
 import { Slideshow, SectionPreview } from '../../components';
@@ -23,20 +23,22 @@ class Main extends Component {
     return (
       <Base
         page={() => (
-          <div className="uk-container">
+          <Fragment>
             <Slideshow />
 
-            {pages
-              .filter(item => 'movieStatus' in item)
-              .map(section => (
-                <SectionPreview
-                  key={section.title}
-                  title={section.optionalTitle}
-                  url={section.url}
-                  movies={movies.filter(movie => movie.status === section.movieStatus)}
-                />
-              ))}
-          </div>
+            <div className="uk-container">
+              {pages
+                .filter(item => 'movieStatus' in item)
+                .map(section => (
+                  <SectionPreview
+                    key={section.title}
+                    title={section.optionalTitle}
+                    url={section.url}
+                    movies={movies.filter(movie => movie.status === section.movieStatus)}
+                  />
+                ))}
+            </div>
+          </Fragment>
         )}
       />
     );
