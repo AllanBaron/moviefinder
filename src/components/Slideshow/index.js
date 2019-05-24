@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import api from '../../services/api';
 
+import { SlideshowContainer } from './styles';
+
 export default class Slideshow extends Component {
   state = { slides: [] };
 
@@ -15,7 +17,7 @@ export default class Slideshow extends Component {
     const { slides } = this.state;
 
     return (
-      <div
+      <SlideshowContainer
         className="uk-position-relative uk-visible-toggle uk-light"
         tabIndex="-1"
         uk-slideshow="ratio: 6:2; animation: push"
@@ -42,7 +44,7 @@ export default class Slideshow extends Component {
           uk-slidenav-next=""
           uk-slideshow-item="next"
         />
-      </div>
+      </SlideshowContainer>
     );
   }
 }
