@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { pages } from '../../../services/app-info';
 
 import Search from './Search';
 import Login from './Login';
 
-import { pages } from '../../../services/app-info';
-
+import Logo from '../../../assets/images/logo.png';
 import { MenuContainer } from './styles';
 
 const Menu = () => {
@@ -17,6 +17,7 @@ const Menu = () => {
         <div className="uk-container">
           <nav className="uk-navbar-container uk-navbar-transparent" uk-navbar="">
             <div className="uk-navbar-left">
+              <img src={Logo} alt="Movie Finder" />
               <ul className="uk-navbar-nav">
                 {pages.map(item => (
                   <li key={item.id} className={currentUrl === item.url ? 'uk-active' : ''}>

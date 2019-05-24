@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { ColorPrimary } from '../../styles';
 
 export const SectionPreviewContainer = styled.section`
-  padding: 20px 0 20px 0;
+  padding: 70px 0 70px 0;
 
   h2 {
     text-align: center;

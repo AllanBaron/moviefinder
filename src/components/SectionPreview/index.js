@@ -8,7 +8,7 @@ import MoviePosterGrid from '../MoviePosterGrid';
 
 const SectionPreview = ({ title, url, movies }) => (
   <SectionPreviewContainer>
-    <h2>{title}</h2>
+    <h2 className="uk-margin-medium-bottom">{title}</h2>
     <MoviePosterGrid movies={movies} />
     <div>
       <Link to={url} className="uk-button uk-button-default">
