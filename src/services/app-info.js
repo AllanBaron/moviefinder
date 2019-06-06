@@ -22,3 +22,9 @@ export const pages = [
     movieStatus: 'comming-soon',
   },
 ];
+
+export const pageNotFound = {
+  id: 0,
+  title: 'Página 404',
+  optionalTitle: 'Página não encontrada',
+};

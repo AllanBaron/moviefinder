@@ -5,19 +5,17 @@ import Base from '../Base';
 
 import { Breadcrumbs, MoviePosterGrid } from '../../components';
 
-import { SectionBaseContainer } from './styles';
-
 const SectionBase = ({ title, dir, movies }) => (
   <Base
     page={() => (
-      <SectionBaseContainer>
+      <>
         <Breadcrumbs dir={dir} title={title} />
         <div className="uk-container">
           <div className="uk-margin-medium-top uk-margin-medium-bottom">
             <MoviePosterGrid movies={movies} />
           </div>
         </div>
-      </SectionBaseContainer>
+      </>
     )}
   />
 );
