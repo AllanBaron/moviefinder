@@ -10,8 +10,9 @@ const Router = () => (
     <Switch>
       <Route path="/" exact component={Pages.Main} />
       <Redirect from="/filmes" exact to="/filmes/em-cartaz" />
-      <Route exact path="/filmes/em-cartaz" component={Pages.SectionReleased} />
-      <Route exact path="/filmes/em-breve" component={Pages.SectionCommingSoon} />
+      <Route path="/filmes/em-cartaz" exact component={Pages.SectionReleased} />
+      <Route path="/filmes/em-breve" exact component={Pages.SectionCommingSoon} />
+      <Route path="/cadastro" exact component={Pages.SignUp} />
       <Route component={Pages.NoMatchPage} />
     </Switch>
   </BrowserRouter>
