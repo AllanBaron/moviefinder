@@ -15,6 +15,9 @@
     <link rel="shortcut icon" type="image/png" href="%PUBLIC_URL%/images/icons/icon-72x72.png" />
 
     <title>Movie Finder</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/css/load.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -45,9 +48,20 @@
     <link rel="apple-touch-icon" sizes="192x192" href="%PUBLIC_URL%/images/icons/icon-192x192.png" />
 
   </head>
-  <body itemscope itemtype="http://schema.org/WebPage">
+  <body>
 
     <noscript>You need to enable JavaScript to run this app.</noscript>
+
+    <div class="ipl-progress-indicator" id="ipl-progress-indicator">
+      <div class="ipl-progress-indicator-head">
+        <div class="first-indicator"></div>
+        <div class="second-indicator"></div>
+      </div>
+      <div class="insp-logo-frame">
+        <img src="%PUBLIC_URL%/images/icons/icon-128x128.png" class="insp-logo-frame-img" />
+      </div>
+    </div>
+
     <div id="app"></div>
 
     <!-- Scripts -->

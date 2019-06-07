@@ -1,24 +1,42 @@
-import React, { Component, Fragment } from 'react';
-import { Helmet } from 'react-helmet';
+import React, { Component, Fragment } from "react";
+import { Helmet } from "react-helmet";
 
-import Routes from './routes';
-import { title, description } from './services/app-info';
+import Routes from "./routes";
+import { title, description } from "./services/app-info";
 
-import { GlobalStyle, Offline } from './styles';
+import { GlobalStyle, Offline } from "./styles";
 
 export default class App extends Component {
   state = {
-    online: navigator.onLine,
+    online: navigator.onLine
+  };
+
+  loading = () => {
+    window.onload = function() {
+      const progressBar = document.getElementById("ipl-progress-indicator");
+
+      if (progressBar) {
+        // fade out
+        progressBar.classList.add("available");
+        document.body.style.overflow = "visible";
+        setTimeout(() => {
+          // remove from DOM
+          progressBar.outerHTML = "";
+        }, 800);
+      }
+    };
   };
 
   componentDidMount() {
-    window.addEventListener('online', this.handleNetworkChange);
-    window.addEventListener('offline', this.handleNetworkChange);
+    this.loading();
+
+    window.addEventListener("online", this.handleNetworkChange);
+    window.addEventListener("offline", this.handleNetworkChange);
   }
 
   componentWillUnmount() {
-    window.removeEventListener('online', this.handleNetworkChange);
-    window.removeEventListener('offline', this.handleNetworkChange);
+    window.removeEventListener("online", this.handleNetworkChange);
+    window.removeEventListener("offline", this.handleNetworkChange);
   }
 
   handleNetworkChange = () => {

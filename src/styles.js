@@ -1,9 +1,9 @@
-import styled, { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle } from "styled-components";
 
-export const FontPrimary = 'Open Sans';
-export const ColorPrimary = '#890000';
-export const ColorLightGrey = '#ececec';
-export const ColorDarkGrey = '#5a5a5a';
+export const FontPrimary = "Open Sans";
+export const ColorPrimary = "#890000";
+export const ColorLightGrey = "#ececec";
+export const ColorDarkGrey = "#5a5a5a";
 
 export const GlobalStyle = createGlobalStyle`
   /* Uikit */
