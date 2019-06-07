@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import { Helmet } from 'react-helmet';
 
-import { title, pages, pageNotFound } from '../../services/app-info';
+import { title, pages } from '../../services/app-info';
 import SubMenu from './SubMenu';
 import Menu from './Menu';
 
@@ -13,7 +13,7 @@ export default class Header extends Component {
 
     let currentPage = pages.find(item => item.url === currentUrl);
 
-    if (!currentPage) currentPage = pageNotFound;
+    if (!currentPage) currentPage = pages.find(item => item.type === '404');
 
     this.setState({
       metaTitle: currentPage.optionalTitle ? currentPage.optionalTitle : currentPage.title,
