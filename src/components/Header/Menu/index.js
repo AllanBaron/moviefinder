@@ -19,11 +19,13 @@ const Menu = () => {
             <div className="uk-navbar-left">
               <img src={Logo} alt="Movie Finder" />
               <ul className="uk-navbar-nav">
-                {pages.map(item => (
-                  <li key={item.id} className={currentUrl === item.url ? 'uk-active' : ''}>
-                    <Link to={item.url}>{item.title}</Link>
-                  </li>
-                ))}
+                {pages
+                  .filter(item => item.type === 'menu')
+                  .map(item => (
+                    <li key={item.id} className={currentUrl === item.url ? 'uk-active' : ''}>
+                      <Link to={item.url}>{item.title}</Link>
+                    </li>
+                  ))}
               </ul>
             </div>
             <div className="uk-navbar-right">
