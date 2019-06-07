@@ -1,11 +1,15 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { FaUser } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
+import { pages } from '../../../../services/app-info';
 
 const Login = () => (
-  <Fragment>
+  <>
     <FaUser />
-    <span>Login</span>
-  </Fragment>
+    <span>
+      <Link to={pages.find(item => item.type === 'sign-up').url}>Login</Link>
+    </span>
+  </>
 );
 
 export default Login;
