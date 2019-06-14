@@ -5,7 +5,7 @@ import { pages } from '../../../services/app-info';
 import Search from './Search';
 import Login from './Login';
 
-import Logo from '../../../assets/images/logo.png';
+import Logo from '../../../assets/images/logo.svg';
 import { MenuContainer } from './styles';
 
 const Menu = () => {
